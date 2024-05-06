@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+.container
+{
+    border: 2px solid black;
+    width: 96vw;
+    display: flex;
+    margin: 20px;
+    box-shadow: 15px 15px 15px 15px rgb(221,221,221) ;
+    overflow-x: hidden;
+    white-space: nowrap; 
+    padding: 5px;
+}
+.card {
+    display: inline-block;
+    width: 100%; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    background-color: #ccc; /* Adjust as needed */
+    margin-right: 10px; /* Adjust spacing between cards */
+    animation: moveLeft 30s ease-in-out 5s infinite alternate ; /* Adjust duration and timing function */
+  }
+.cashCards
+{
+    display: inline-block;
+    width: 100%; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    background-color: #ccc; /* Adjust as needed */
+    margin-right: 10px; /* Adjust spacing between cards */
+    animation: moveLeft 30s ease-in-out 5s infinite alternate ; /* Adjust duration and timing function */
+}
+  @keyframes moveLeft {
+    0% {
+        transform: translateX(-0%);
+    }
+    20%
+    {
+        transform: translateX(-100%);
+    }
+    40%
+    {
+        transform: translateX(-200%);
+    }
+    60%
+    {
+        transform: translateX(-300%);
+    }
+    80%
+    {
+        transform: translateX(-385%);
+    }
+    100% {
+      transform: translateX(-0%);
+    }
+  }

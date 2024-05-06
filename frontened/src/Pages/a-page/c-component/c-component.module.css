@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+.navbar
+{
+    height: 100px;
+    width: 96vw;
+    margin: 20px;
+    margin-top: 0;
+    display: flex;
+    background-color: rgb(84,84,84);
+    /* rgb(84,84,84) */
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.brand_container
+{
+    text-align: center;
+    margin-top: 0.5%;
+    color: rgb(208,195,147);
+    font-size: larger;
+}
+.options_container
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 2px;
+}
+
+.options_bar
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.options_bar a
+{
+    margin-bottom: 0;
+    color: white;
+    text-decoration: none;
+}
+.options_bar a:hover
+{
+    color: red;
+}
+.options_bar input
+{
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+
+}
+.wishlist
+{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 2px;
+}
+.wishlist img{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+}
+.cart
+{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    padding: 2px;
+}
+.cart img
+{
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+}
+.login_bar
+{
+    text-align: end;
+}
+.login_bar a{
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+}
+.info
+{
+    border: 2px solid red;
+
+    height: 500px;
+    width: 900px;
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    z-index: 15;
+    top: 13.5%;
+    left: 28%;
+}
+.shop_by
+{
+    border-bottom: 2px solid black;
+    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 50px;
+
+    display: flex;
+}
+.shop_by div
+{
+    height: 30px;
+    width: 100px;
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0;
+
+    background-color: rgb(246,246,246);
+}
+.category:hover ,.brands:hover
+{
+    font-weight: bold;
+}
+.information {
+    margin-top: 5px;
+    border: 2px solid yellow;
+    /* height: 440px; Maximum height */
+    /* width: 100%; Maximum width */
+    height: 100px;
+    width: 400px;
+    overflow: scroll;
+    overflow-wrap: break-word;
+  }
+.information ul li
+{
+    display: inline-block;
+    margin-right: 30px;
+}

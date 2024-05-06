@@ -1,0 +1,41 @@
+
+.container
+{
+    border: 2px solid black;
+    width: 200px;
+    margin: 20px;
+    
+}
+.filterInfo
+{
+    height: 400px;
+    width: 600px;
+    border: 2px solid black;
+    background-color: white;
+    position: absolute;
+    left: 30%;
+}
+.filterInfoHeader
+{
+    display: flex;
+    justify-content: space-between;
+}
+.filterInfoHeader button
+{
+    background-color: red;
+    font-size: larger;
+}
+.filterInfoFooter
+{
+    border: 2px solid red;
+    overflow: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.filterInfoFooter span
+{
+    margin-left: 10px;
+    margin-right: 20px;
+
+}

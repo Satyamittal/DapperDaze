@@ -1,0 +1,17 @@
+*
+{
+    box-sizing: border-box;
+}
+.container
+{
+    border: 2px solid red;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('https://wallpapercave.com/wp/wp1877585.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10px;
+    padding-bottom: 50px;
+}
