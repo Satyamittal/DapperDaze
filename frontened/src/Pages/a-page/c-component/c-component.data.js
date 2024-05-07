@@ -1,5 +1,5 @@
 export const unisexBrands = {
-    "AJIO GOLD BRANDS": [
+    "DapperDaze GOLD BRANDS": [
       "Superdry",
       "Scotch & Soda",
       "GAP",
@@ -69,14 +69,7 @@ export const unisexBrands = {
     ]
   };
   
-const womenCategory = {
-    "ALL THAT'S NEW": [],
-    "CURVE SIZE": [],
-    "AJIO GLOBAL": [],
-    "NIGHT & LOUNGEWEAR": [],
-    "BEAUTYNEW": [],
-    "ATHLEISURE": [],
-    "FUSION WEAR": [],
+export const womenCategory = {
     "ETHNIC WEAR": ["Kurtas", "Dress Material", "Salwars & Churidars", "Kurtis & Tunics", "Sarees", "Dupattas", "Kurta Suit Sets", "Blouses", "Leggings", "Skirts & Ghagras", "Shawls & Wraps", "Palazzos & Culottes"],
     "JEWELLERY": ["Gold And Silver Coins", "Gold And Diamond Jewellery", "Silver Jewellery", "Fashion Jewellery"],
     "LINGERIE & INNERWEAR": ["Bras", "Panties", "Camisoles & Slips", "Maternity Wear", "Thermal Wear"],
@@ -87,13 +80,8 @@ const womenCategory = {
     "CLOTHING": ["Dresses & Gowns", "Kurtas", "Kurtis & Tunics", "Pants & Shorts", "Jackets & Shrugs", "Shirts, Tops & Tunics"],
   };
 
-const menCategory = {
-"ALL THAT'S NEW": [],
+export const menCategory = {
 'CLOTHING': ["Clothing", "Footwear", "Accessories"],
-"AJIO GLOBAL": [],
-"PLUS SIZE": [],
-"NIGHT & LOUNGEWEAR": [],
-"GROOMINGNEW": [],
 "ETHNIC & FESTIVEHOT": ["Kurtas And Shirts", "Nehru Jackets"],
 "WESTERN WEAR": ["Jackets & Coats", "Jeans", "Shirts", "Shorts & 3/4ths", "Sweatshirts & Hoodies", "Track Pants", "Trousers & Pants", "T-Shirts"],
 'FOOTWEAR': ["Casual Shoes", "Flip-Flops & Slippers", "Formal Shoes", "Sandals", "Sneakers", "Sports Shoes"],
@@ -104,22 +92,19 @@ const menCategory = {
 "#AJIORECOMMENDS": ["Play Time"]
 };
 
-const kidsCategory = {
+export const kidsCategory = {
     "NEW IN": ["CLOTHING", "FOOTWEAR & ACCS", "INNERWEAR & SLEEPWEAR"],
     "BOYS": ["Denims & Trousers", "Joggers & Track Pants", "Outerwear", "Shirts", "Shorts & 3/4ths", "T-Shirts"],
     "TOYS": ["SHOP BY AGE", "0 To 2 Years", "2 To 5 Years", "5 To 8 Years", "8 To 12 Years", "12 Years And Above"],
     "FEATURED": ["Denims Under 799", "Shirts Under 599", "T-Shirts Under 399"],
     "GIRLS": ["Dresses & Frocks", "Jeans & Jeggings", "Leggings", "Outerwear", "Skirts & Shorts", "Tops & T-Shirts"],
     "SHOP BY AGE": ["0 To 2 Years", "2 To 5 Years", "5 To 8 Years", "8 To 12 Years", "12 Years And Above"],
-    "FEATURED": ["Dresses Under 499", "Tops Under 399"],
-    "BABY": ["Sets"],
     "TOYS AND BABYCARE": ["Action-Figurine & Collectibles", "Creative & Educational Toys", "Gaming, Robots & Vehicles", "Infants Toys", "Role & Pretend Play", "School, Party Supplies & Books", "Soft Toys", "Toy-Guns & Accessories"],
-    "COLLECTIONS": ["AJIO EXCLUSIVES"],
     "FOOTWEAR & ACCESSORIES": ["FEATURED BRANDS", "Crocs", "MINI KLUB", "Gini & Jony", "Hamleys", "Mothercare", "Marks & Spencer", "Pepe Jeans", "Peppermint", "UCB Kids", "U.S.P.A Kids", "MILA BABY", "MUJI", "Lee Cooper"]
   };
 
 
-const kitchenBrands = {
+export const kitchenBrands = {
 "EXCLUSIVE BRANDS": [
     "Portico",
     "Home Expressions",
@@ -179,18 +164,24 @@ const kitchenBrands = {
 ]
 };
 
-const kitchenCategory = {
+export const kitchenCategory = {
 "BED LINEN": ["Bedsheets", "Bedding Sets", "Blankets, Dohars & Quilts", "Comforters", "Bed Covers", "Mattress Protectors", "Quilt & Duvet Covers"],
 "CUSHIONS & PILLOWS": ["Cushions", "Pillows", "Bed Wedges & Neck Pillows", "Bolsters", "Cushion Covers", "Pillow Covers"],
-"RUGS, CARPETS & MATS": [],
 "CURTAIN & ACCESSORIES": ["Window Curtains", "Door Curtains"],
 "KITCHEN": ["Cookware & Cutlery", "Bakeware", "Kitchen Tools", "Kitchen Aprons, Gloves & Towel", "Kitchen Organisers"],
 "DINING": ["Serveware & Drinkware", "Table Linen Sets", "Table Covers & Runners", "Table Napkins", "Placemats & Coasters"],
-"STATIONERY & ORGANISERS": [],
 "HOME DECOR": ["Wall Decor", "Wall Shelves", "Clocks", "Photo Frames", "Mirrors", "Lamp, Diyas & Candle", "Home Fragnance", "Plants & Flowers"],
 "FESTIVE GIFTS": ["Bells & Wind Chimes", "Decorative Pots, Plates & Jars", "Fengshui", "Indoor Fountains", "Religious Idols", "Vases"],
-"GARDENING & PLANTERS": [],
 "BATH": ["Bath Towel & Robes", "Hand & Face Towels", "Towel Sets", "Bath Curtains & Mats", "Bathroom Organisers", "Laundry Baskets & Dryers", "Holders & More"],
-"HOME ESSENTIALS": [],
 "FEATURED STORIES": ["GIFT For Everyone Under 999", "Winter Carnival Upto 60", "Kids Room Min 40", "Heritage Of India"]
+};
+
+export const beauty = {
+  "SKIN CARE": ["Cleanser", "Moisturisers", "Serum", "Sunscreen", "Masks", "Eye Cream", "Lip Balm", "Hand Cream"],
+  "MAKEUP": ["Lipstick", "Lip Gloss", "Lip Liner", "Lip Balm", "Nail Care", "Mascara", "Eyeliner & Kajals", "Foundation", "Concealer", "Tools"],
+  "HAIR CARE": ["Shampoo", "Conditioner", "Hair Oil", "Hair Color", "Hair Styling"],
+  "FRAGRANCES": ["Perfumes", "Deodrants", "Spray Mist"],
+  "BATH & BODY": ["Face Wash", "Body Wash", "Body Scrub"],
+  "MEN GROOMING": ["Shaving Essentials", "Beard Essentials", "Hair Wax", "Deodrants"],
+  "FEATURED BRANDS": ["Lakme", "Maybelline", "Beardo", "Loreal Paris", "Mcaffiene", "Mamaearth", "Plum", "MAC", "PAC", "Lotus", "Forest Essentials"]
 };

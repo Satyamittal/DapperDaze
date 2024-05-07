@@ -18,7 +18,7 @@ const filter =
         "2",
         "3",
         "4",
-        "5"
+        "5",
     ],
     "discount": [
         "0-20% (4,709)",
@@ -67,6 +67,24 @@ export function Filter_column()
 {
     const [FilterBox ,openFilterBox] = useState(false) ;
     const [filterValue ,setFilterValue] = useState('') ;
+    // const [selectAll, setSelectAll] = useState(false) ;
+
+    function selectAll()
+    {
+        var checkboxes = document.querySelectorAll(`.${filterValue}`);
+        
+        checkboxes.forEach(function(checkbox) {
+            checkbox.checked = true;
+        });
+    }
+
+    function clearAll()
+    {
+        var checkboxes = document.querySelectorAll(`.${filterValue}`);
+        checkboxes.forEach(function(checkbox) {
+            checkbox.checked = false;
+        });
+    }
 
     return (
         <>
@@ -79,15 +97,6 @@ export function Filter_column()
                         return (
                             <div key={key}>
                               <h5 onClick={()=>{openFilterBox(true); setFilterValue(key)}}>{`${key.charAt(0).toUpperCase()}${key.slice(1)}`}</h5>
-                              {
-                                
-                                // value.map((el,index)=>
-                                // {
-                                //     return (
-                                //         <li key={index}>{el}</li>
-                                //     );
-                                // })
-                              }
                             </div>
                         );
                         })
@@ -104,16 +113,18 @@ export function Filter_column()
                             <button>&times;</button>
                     </div>
                     <div className={filterStyles.filterInfoFooter}>
-
-                        {console.log(filter.filterValue)}
                         {
-                            // filter.filterValue.map((el,index)=>(
-                            //     <span key={index}>
-                            //         <input type="checkbox" id={index} name={el}/>
-                            //         <label for={index}>{el}</label> 
-                            //     </span>
-                            // ))
+                            filter[filterValue].map((el,index)=>(
+                                <span key={index} >
+                                    <input type="checkbox" id={el} name={el} className={filterValue}/>
+                                    <label for={el}>{el}</label> 
+                                </span>
+                            ))
                         }
+                    </div>
+                    <div className={filterStyles.bottomFooter}>
+                        <a onClick={selectAll}>Select All</a>
+                        <a onClick={clearAll}>Clear All</a>
                     </div>
                 </div>
             }

@@ -1,6 +1,17 @@
 .container
 {
+    width: 600px;
     flex-grow: 1;
     border: 2px solid black;
     background-color: red;
+}
+.images
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.infoBox
+{
+    min-height: 400px;
 }

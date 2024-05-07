@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import { unisexBrands } from './c-component.data';
+import { unisexBrands ,menCategory ,womenCategory,kidsCategory,kitchenBrands,kitchenCategory,beauty} from './c-component.data';
 
 import c_styles from './c-component.module.css'
 export function C_component()
@@ -9,16 +9,6 @@ export function C_component()
     const [value, setValue] = useState('') ;
     const [brands, setBrands] = useState(false) ;
     const [category, setCategory] = useState(true) ;
-
-    // const testing = Object.keys(unisexBrands).map((key) => ( 
-    //     <li key={key}>
-    //             ndjfasbfas bfas dn asnd ans dna sdcas c_styles
-    //             ndjfasbfas bfas dn asnd ans dna sdcas c_styles
-    //             ndjfasbfas bfas dn asnd ans dna sdcas c_styles
-    //             ndjfasbfas bfas dn asnd ans dna sdcas c_styles
-    //             ndjfasbfas bfas dn asnd ans dna sdcas c_styles
-    //     </li>
-    // ));
 
     return (
         <>
@@ -64,23 +54,130 @@ export function C_component()
                         {
                             brands && 
                             (value == 'MEN' || value == 'WOMEN' || value == 'KIDS' || value == 'BEAUTY') &&
-                            (
-                                <ul>
+                            <div className={c_styles.brandBox}>
                                 {
-                                    Object.keys(unisexBrands).map((key) => ( 
-                                        <li key={key}>{key}</li>
-                                    ))
+                                    Object.keys(unisexBrands).map((key) => {
+                                        
+                                    return (
+                                        <ul key={key}>
+                                            <h5>{key}</h5>
+                                            {
+                                                unisexBrands[key].map((el,index)=><li>{el}</li>)
+                                            }    
+                                        </ul>
+                                        
+                                    )})
                                 }
-                                </ul>
-                            )
+                            </div>
                         }
                         {
-                            category &&
-                            (
-                                <div>
-
-                                </div>
-                            )
+                            brands && 
+                            value == 'HOME & KITCHEN' &&
+                            <div className={c_styles.brandBox}>
+                                {
+                                    Object.keys(kitchenBrands).map((key) => {
+                                        
+                                    return (
+                                        <ul key={key}>
+                                            <h5>{key}</h5>
+                                            {
+                                                kitchenBrands[key].map((el,index)=><li>{el}</li>)
+                                            }    
+                                        </ul>
+                                        
+                                    )})
+                                }
+                            </div>
+                        }
+                        {
+                            category && value == 'MEN' &&
+                            <div className={c_styles.brandBox}>
+                                {
+                                    Object.keys(menCategory).map((key) => {
+                                        
+                                    return (
+                                        <ul key={key}>
+                                            <h5>{key}</h5>
+                                            {
+                                                menCategory[key].map((el,index)=><li>{el}</li>)
+                                            }    
+                                        </ul>
+                                        
+                                    )})
+                                }
+                            </div>
+                        }
+                        {
+                            category && value == 'KIDS' &&
+                            <div className={c_styles.brandBox}>
+                                {
+                                    Object.keys(kidsCategory).map((key) => {
+                                        
+                                    return (
+                                        <ul key={key}>
+                                            <h5>{key}</h5>
+                                            {
+                                                kidsCategory[key].map((el,index)=><li>{el}</li>)
+                                            }    
+                                        </ul>
+                                        
+                                    )})
+                                }
+                            </div>
+                        }
+                        {
+                            category && value == 'WOMEN' &&
+                            <div className={c_styles.brandBox}>
+                                {
+                                    Object.keys(womenCategory).map((key) => {
+                                        
+                                    return (
+                                        <ul key={key}>
+                                            <h5>{key}</h5>
+                                            {
+                                                womenCategory[key].map((el,index)=><li>{el}</li>)
+                                            }    
+                                        </ul>
+                                        
+                                    )})
+                                }
+                            </div>
+                        }
+                        {
+                            category && value == 'HOME & KITCHEN' &&
+                            <div className={c_styles.brandBox}>
+                                {
+                                    Object.keys(kitchenCategory).map((key) => {
+                                        
+                                    return (
+                                        <ul key={key}>
+                                            <h5>{key}</h5>
+                                            {
+                                                kitchenCategory[key].map((el,index)=><li>{el}</li>)
+                                            }    
+                                        </ul>
+                                        
+                                    )})
+                                }
+                            </div>
+                        }
+                        {
+                            category && value == 'BEAUTY' &&
+                            <div className={c_styles.brandBox}>
+                                {
+                                    Object.keys(beauty).map((key) => {
+                                        
+                                    return (
+                                        <ul key={key}>
+                                            <h5>{key}</h5>
+                                            {
+                                                beauty[key].map((el,index)=><li>{el}</li>)
+                                            }    
+                                        </ul>
+                                        
+                                    )})
+                                }
+                            </div>
                         }
                     </div>
 

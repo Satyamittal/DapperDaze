@@ -131,8 +131,6 @@
     border: 2px solid yellow;
     /* height: 440px; Maximum height */
     /* width: 100%; Maximum width */
-    height: 100px;
-    width: 400px;
     overflow: scroll;
     overflow-wrap: break-word;
   }
@@ -140,4 +138,18 @@
 {
     display: inline-block;
     margin-right: 30px;
+}
+.brandBox
+{
+    height: 420px;
+    display: flex;
+}
+.brandBox ul
+{
+    display: flex;
+    flex-direction: column;
+}
+.brandBox ul li
+{
+    width: 150px;
 }

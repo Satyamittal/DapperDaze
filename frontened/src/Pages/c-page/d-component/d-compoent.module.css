@@ -1,0 +1,56 @@
+.card
+{
+    border: 2px solid black;
+    height: 400px;
+    width: 250px;
+}
+.image
+{
+    height: 75%;
+    width: 100%;
+}
+.brandname
+{
+    margin: 0;
+    text-align: center;
+}
+.ratingAndPriceBox
+{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+.ratingBox
+{
+    margin: 3%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    background-color: greenyellow;
+    width: 100px;
+    padding-left: 6%;
+}
+.priceBox
+{
+    border: 2px solid black;
+    padding: 0;
+}
+.buttons
+{
+    display: flex;
+    justify-content: center;
+}
+.wishlistButton ,.cartButton
+{
+    text-align: center;
+    width: 100px;
+    height: 25px;
+}
+.wishlistButton
+{
+    background-color: orange;
+}
+.cartButton
+{
+    background-color: rgb(190, 190, 72);
+}
